@@ -1,0 +1,40 @@
+<context-param>
+    <param-name>contextConfigLocaltion</param-name>
+    <param-value>classpath:applicationContext.xml</param-value>
+</context-param>
+<!--Spring ContenxtLoaderListener-->
+<Listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener
+    </listener-class>
+</Listener>
+
+<servlet>
+    <servlet-name>SpringMVC</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet
+        </servlet-class>
+    <init-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:springmvc.xml</param-value>
+    </init-param>
+</servlet>
+<servlet-mapping>
+    <servlet-name>SpringMVC</servlet-name>
+    <url-pattern>/</url-pattern>
+</servlet-mapping>
+
+<filter>
+    <filter-name>charaterEncodingFilter</filter-name>
+    <filter-class>org.springframewor.web.filter.CharacterEncodingFilter</filter-class>
+    <init-param>
+        <param-name>encoding</param-name>
+        <param-value>UTF-8</param-value>
+    </init-param>
+    <init-param>
+        <param-name>forceEncoding</param-name>
+        <param-value>true</param-value>
+    </init-param>
+</filter>
+<filter-mapping>
+    <filter-name>characterEncodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+</filter-mapping>

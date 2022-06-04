@@ -1,0 +1,303 @@
+Index: hrsys_ssm/src/main/java/com/example/hrsys_ssm/dao/EmployeeDao.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/hrsys_ssm/src/main/java/com/example/hrsys_ssm/dao/EmployeeDao.java b/hrsys_ssm/src/main/java/com/example/hrsys_ssm/dao/EmployeeDao.java
+new file mode 100644
+--- /dev/null	
++++ b/hrsys_ssm/src/main/java/com/example/hrsys_ssm/dao/EmployeeDao.java	
+@@ -0,0 +1,4 @@
++package com.example.hrsys_ssm.dao;
++
++public interface EmployeeDao {
++}
+Index: hrsys_ssm/src/main/java/com/example/hrsys_ssm/dao/DepartmentDao.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/hrsys_ssm/src/main/java/com/example/hrsys_ssm/dao/DepartmentDao.java b/hrsys_ssm/src/main/java/com/example/hrsys_ssm/dao/DepartmentDao.java
+new file mode 100644
+--- /dev/null	
++++ b/hrsys_ssm/src/main/java/com/example/hrsys_ssm/dao/DepartmentDao.java	
+@@ -0,0 +1,4 @@
++package com.example.hrsys_ssm.dao;
++
++public interface DepartmentDao {
++}
+Index: hrsys_ssm/src/main/java/com/example/hrsys_ssm/service/impl/DepartmentService.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/hrsys_ssm/src/main/java/com/example/hrsys_ssm/service/impl/DepartmentService.java b/hrsys_ssm/src/main/java/com/example/hrsys_ssm/service/impl/DepartmentService.java
+new file mode 100644
+--- /dev/null	
++++ b/hrsys_ssm/src/main/java/com/example/hrsys_ssm/service/impl/DepartmentService.java	
+@@ -0,0 +1,4 @@
++package com.example.hrsys_ssm.service.impl;
++
++public interface DepartmentService {
++}
+Index: hrsys_ssm/src/main/java/com/example/hrsys_ssm/service/impl/EmployeeService.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/hrsys_ssm/src/main/java/com/example/hrsys_ssm/service/impl/EmployeeService.java b/hrsys_ssm/src/main/java/com/example/hrsys_ssm/service/impl/EmployeeService.java
+new file mode 100644
+--- /dev/null	
++++ b/hrsys_ssm/src/main/java/com/example/hrsys_ssm/service/impl/EmployeeService.java	
+@@ -0,0 +1,4 @@
++package com.example.hrsys_ssm.service.impl;
++
++public interface EmployeeService {
++}
+Index: hrsys_ssm/src/main/webapp/WEB-INF/emp/add.jsp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/hrsys_ssm/src/main/webapp/WEB-INF/emp/add.jsp b/hrsys_ssm/src/main/webapp/WEB-INF/emp/add.jsp
+new file mode 100644
+--- /dev/null	
++++ b/hrsys_ssm/src/main/webapp/WEB-INF/emp/add.jsp	
+@@ -0,0 +1,1 @@
++
+Index: hrsys_ssm/src/main/webapp/index.jsp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/hrsys_ssm/src/main/webapp/index.jsp b/hrsys_ssm/src/main/webapp/index.jsp
+new file mode 100644
+--- /dev/null	
++++ b/hrsys_ssm/src/main/webapp/index.jsp	
+@@ -0,0 +1,40 @@
++<context-param>
++    <param-name>contextConfigLocaltion</param-name>
++    <param-value>classpath:applicationContext.xml</param-value>
++</context-param>
++<!--Spring ContenxtLoaderListener-->
++<Listener>
++    <listener-class>org.springframework.web.context.ContextLoaderListener
++    </listener-class>
++</Listener>
++
++<servlet>
++    <servlet-name>SpringMVC</servlet-name>
++    <servlet-class>org.springframework.web.servlet.DispatcherServlet
++        </servlet-class>
++    <init-param>
++        <param-name>contextConfigLocation</param-name>
++        <param-value>classpath:springmvc.xml</param-value>
++    </init-param>
++</servlet>
++<servlet-mapping>
++    <servlet-name>SpringMVC</servlet-name>
++    <url-pattern>/</url-pattern>
++</servlet-mapping>
++
++<filter>
++    <filter-name>charaterEncodingFilter</filter-name>
++    <filter-class>org.springframewor.web.filter.CharacterEncodingFilter</filter-class>
++    <init-param>
++        <param-name>encoding</param-name>
++        <param-value>UTF-8</param-value>
++    </init-param>
++    <init-param>
++        <param-name>forceEncoding</param-name>
++        <param-value>true</param-value>
++    </init-param>
++</filter>
++<filter-mapping>
++    <filter-name>characterEncodingFilter</filter-name>
++    <url-pattern>/*</url-pattern>
++</filter-mapping>
+\ No newline at end of file
+Index: hrsys_ssm/src/main/resources/applicationContext.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/hrsys_ssm/src/main/resources/applicationContext.xml b/hrsys_ssm/src/main/resources/applicationContext.xml
+new file mode 100644
+--- /dev/null	
++++ b/hrsys_ssm/src/main/resources/applicationContext.xml	
+@@ -0,0 +1,43 @@
++<context:property-placeholder location="classpath:db.properties"/>
++<context:component-scan base-package="com.example.hrsys" />
++
++<aop:aspectj-autoproxy>M/aop:aspectj-autoproxy>
++
++<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
++    <property name="driverClassName" value="${jdbc.driver}" />
++    <property name="url" value="${jdbc.url} " />
++    <property name="username" value="${jsbc.username}" />
++    <property name="password" value="${jdbc.password}" />
++    <property name="maxActive" value="30" />
++    <property name="maxIdle" value="20" />
++</bean>
++
++<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
++    <property name="dataSource" ref="dataSource" />
++    <property name="mapperLocations" value="classpath:mapper/*.xml"></property>
++</bean>
++
++
++<bean calss="org.mybatis.spring.mapper.MapperScannerConfigurer">
++    <property name="basePackage" value="com.example.hrsys.dao"></property>
++    <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
++</bean>
++
++<bean id="transactionManager"
++    class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
++    <property name="dataSource" ref="dataSource" />
++</bean>
++
++<tx:advice id="txAdvice" transaction-manager="transactonManager">
++    <tx:attributes>
++        <tx:method name="delete*" propagation="REQUIRED" />
++        <tx:method name="add*" propagation="REQUIRED" />
++        <tx:method name="update*" propagation="REQUIRED"/>
++        <tx:method name="search*" propagation="SUPPORTS" read-only="true" />
++    </tx:attributes>
++</tx:advice>
++
++<aop:config>
++    <aop:advisor advice-ref="txAdvice"
++                 pointcut="execution(* com.example.hrsys.service.impl.*.*(..))" />
++</aop:config>
+\ No newline at end of file
+Index: hrsys_ssm/src/main/resources/springmvc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/hrsys_ssm/src/main/resources/springmvc.xml b/hrsys_ssm/src/main/resources/springmvc.xml
+new file mode 100644
+--- /dev/null	
++++ b/hrsys_ssm/src/main/resources/springmvc.xml	
+@@ -0,0 +1,11 @@
++ <context:component-scan base-package="com.example.hrsys_ssm.controller" />
++
++ <mvc:annotation-driven />
++
++ <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
++
++    <property name="viewClass"
++              value="org.springframework.web.servlet.view.JstlView"/>
++    <property name="prefix" value="/WEB=INF" />
++    <property name="suffix" value=".jsp"></property>
++ </bean>
+\ No newline at end of file
+Index: hrsys_ssm/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n         xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd\">\r\n    <modelVersion>4.0.0</modelVersion>\r\n    <parent>\r\n        <groupId>org.springframework.boot</groupId>\r\n        <artifactId>spring-boot-starter-parent</artifactId>\r\n        <version>2.7.0</version>\r\n        <relativePath/> <!-- lookup parent from repository -->\r\n    </parent>\r\n    <groupId>com.example</groupId>\r\n    <artifactId>hrsys_ssm</artifactId>\r\n    <version>0.0.1-SNAPSHOT</version>\r\n    <name>hrsys_ssm</name>\r\n    <description>hrsys_ssm</description>\r\n    <properties>\r\n        <java.version>18</java.version>\r\n    </properties>\r\n    <dependencies>\r\n        <dependency>\r\n            <groupId>org.springframework.boot</groupId>\r\n            <artifactId>spring-boot-starter-jdbc</artifactId>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>org.springframework.boot</groupId>\r\n            <artifactId>spring-boot-starter-web</artifactId>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>org.springframework.boot</groupId>\r\n            <artifactId>spring-boot-starter-web-services</artifactId>\r\n        </dependency>\r\n\r\n        <dependency>\r\n            <groupId>org.springframework.boot</groupId>\r\n            <artifactId>spring-boot-devtools</artifactId>\r\n            <scope>runtime</scope>\r\n            <optional>true</optional>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>org.springframework.boot</groupId>\r\n            <artifactId>spring-boot-starter-test</artifactId>\r\n            <scope>test</scope>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>org.springframework.restdocs</groupId>\r\n            <artifactId>spring-restdocs-mockmvc</artifactId>\r\n            <scope>test</scope>\r\n        </dependency>\r\n    </dependencies>\r\n\r\n    <build>\r\n        <plugins>\r\n            <plugin>\r\n                <groupId>org.asciidoctor</groupId>\r\n                <artifactId>asciidoctor-maven-plugin</artifactId>\r\n                <version>1.5.8</version>\r\n                <executions>\r\n                    <execution>\r\n                        <id>generate-docs</id>\r\n                        <phase>prepare-package</phase>\r\n                        <goals>\r\n                            <goal>process-asciidoc</goal>\r\n                        </goals>\r\n                        <configuration>\r\n                            <backend>html</backend>\r\n                            <doctype>book</doctype>\r\n                        </configuration>\r\n                    </execution>\r\n                </executions>\r\n                <dependencies>\r\n                    <dependency>\r\n                        <groupId>org.springframework.restdocs</groupId>\r\n                        <artifactId>spring-restdocs-asciidoctor</artifactId>\r\n                        <version>${spring-restdocs.version}</version>\r\n                    </dependency>\r\n                </dependencies>\r\n            </plugin>\r\n            <plugin>\r\n                <groupId>org.springframework.boot</groupId>\r\n                <artifactId>spring-boot-maven-plugin</artifactId>\r\n            </plugin>\r\n        </plugins>\r\n    </build>\r\n\r\n</project>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/hrsys_ssm/pom.xml b/hrsys_ssm/pom.xml
+--- a/hrsys_ssm/pom.xml	
++++ b/hrsys_ssm/pom.xml	
+@@ -79,6 +79,14 @@
+                 <groupId>org.springframework.boot</groupId>
+                 <artifactId>spring-boot-maven-plugin</artifactId>
+             </plugin>
++            <plugin>
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-compiler-plugin</artifactId>
++                <configuration>
++                    <source>17</source>
++                    <target>17</target>
++                </configuration>
++            </plugin>
+         </plugins>
+     </build>
+ 
+Index: hrsys_ssm/src/main/java/com/example/hrsys_ssm/controller/DepartmentController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/hrsys_ssm/src/main/java/com/example/hrsys_ssm/controller/DepartmentController.java b/hrsys_ssm/src/main/java/com/example/hrsys_ssm/controller/DepartmentController.java
+new file mode 100644
+--- /dev/null	
++++ b/hrsys_ssm/src/main/java/com/example/hrsys_ssm/controller/DepartmentController.java	
+@@ -0,0 +1,4 @@
++package com.example.hrsys_ssm.controller;
++
++public class DepartmentController {
++}
+Index: hrsys_ssm/src/main/java/com/example/hrsys_ssm/controller/EmployeeController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/hrsys_ssm/src/main/java/com/example/hrsys_ssm/controller/EmployeeController.java b/hrsys_ssm/src/main/java/com/example/hrsys_ssm/controller/EmployeeController.java
+new file mode 100644
+--- /dev/null	
++++ b/hrsys_ssm/src/main/java/com/example/hrsys_ssm/controller/EmployeeController.java	
+@@ -0,0 +1,4 @@
++package com.example.hrsys_ssm.controller;
++
++public class EmployeeController {
++}
+Index: hrsys_ssm/src/main/java/com/example/hrsys_ssm/entity/Department.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/hrsys_ssm/src/main/java/com/example/hrsys_ssm/entity/Department.java b/hrsys_ssm/src/main/java/com/example/hrsys_ssm/entity/Department.java
+new file mode 100644
+--- /dev/null	
++++ b/hrsys_ssm/src/main/java/com/example/hrsys_ssm/entity/Department.java	
+@@ -0,0 +1,4 @@
++package com.example.hrsys_ssm.entity;
++
++public class Department {
++}
+Index: hrsys_ssm/src/main/java/com/example/hrsys_ssm/util/LogOut.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/hrsys_ssm/src/main/java/com/example/hrsys_ssm/util/LogOut.java b/hrsys_ssm/src/main/java/com/example/hrsys_ssm/util/LogOut.java
+new file mode 100644
+--- /dev/null	
++++ b/hrsys_ssm/src/main/java/com/example/hrsys_ssm/util/LogOut.java	
+@@ -0,0 +1,4 @@
++package com.example.hrsys_ssm.util;
++
++public class LogOut {
++}
+Index: hrsys_ssm/src/main/java/com/example/hrsys_ssm/entity/Employee.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/hrsys_ssm/src/main/java/com/example/hrsys_ssm/entity/Employee.java b/hrsys_ssm/src/main/java/com/example/hrsys_ssm/entity/Employee.java
+new file mode 100644
+--- /dev/null	
++++ b/hrsys_ssm/src/main/java/com/example/hrsys_ssm/entity/Employee.java	
+@@ -0,0 +1,4 @@
++package com.example.hrsys_ssm.entity;
++
++public class Employee {
++}
+diff --git a/hrsys_ssm/src/main/webapp/WEB-INF/dep/add.jsp b/hrsys_ssm/src/main/webapp/WEB-INF/dep/add.jsp
+new file mode 100644
+diff --git a/hrsys_ssm/src/main/webapp/WEB-INF/dep/update.jsp b/hrsys_ssm/src/main/webapp/WEB-INF/dep/update.jsp
+new file mode 100644
+diff --git a/hrsys_ssm/src/main/webapp/WEB-INF/dep/show.jsp b/hrsys_ssm/src/main/webapp/WEB-INF/dep/show.jsp
+new file mode 100644
+diff --git a/hrsys_ssm/src/main/webapp/WEB-INF/emp/show.jsp b/hrsys_ssm/src/main/webapp/WEB-INF/emp/show.jsp
+new file mode 100644
+diff --git a/hrsys_ssm/src/main/webapp/WEB-INF/web.xml b/hrsys_ssm/src/main/webapp/WEB-INF/web.xml
+new file mode 100644
+diff --git a/hrsys_ssm/src/main/webapp/WEB-INF/emp/update.jsp b/hrsys_ssm/src/main/webapp/WEB-INF/emp/update.jsp
+new file mode 100644
+diff --git a/hrsys_ssm/src/main/resources/db.properties b/hrsys_ssm/src/main/resources/db.properties
+new file mode 100644

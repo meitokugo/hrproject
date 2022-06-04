@@ -1,0 +1,43 @@
+<context:property-placeholder location="classpath:db.properties"/>
+<context:component-scan base-package="com.example.hrsys" />
+
+<aop:aspectj-autoproxy>M/aop:aspectj-autoproxy>
+
+<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+    <property name="driverClassName" value="${jdbc.driver}" />
+    <property name="url" value="${jdbc.url} " />
+    <property name="username" value="${jsbc.username}" />
+    <property name="password" value="${jdbc.password}" />
+    <property name="maxActive" value="30" />
+    <property name="maxIdle" value="20" />
+</bean>
+
+<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+    <property name="dataSource" ref="dataSource" />
+    <property name="mapperLocations" value="classpath:mapper/*.xml"></property>
+</bean>
+
+
+<bean calss="org.mybatis.spring.mapper.MapperScannerConfigurer">
+    <property name="basePackage" value="com.example.hrsys.dao"></property>
+    <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
+</bean>
+
+<bean id="transactionManager"
+    class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+    <property name="dataSource" ref="dataSource" />
+</bean>
+
+<tx:advice id="txAdvice" transaction-manager="transactonManager">
+    <tx:attributes>
+        <tx:method name="delete*" propagation="REQUIRED" />
+        <tx:method name="add*" propagation="REQUIRED" />
+        <tx:method name="update*" propagation="REQUIRED"/>
+        <tx:method name="search*" propagation="SUPPORTS" read-only="true" />
+    </tx:attributes>
+</tx:advice>
+
+<aop:config>
+    <aop:advisor advice-ref="txAdvice"
+                 pointcut="execution(* com.example.hrsys.service.impl.*.*(..))" />
+</aop:config>

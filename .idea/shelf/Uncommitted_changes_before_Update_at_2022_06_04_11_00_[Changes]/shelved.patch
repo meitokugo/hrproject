@@ -1,0 +1,124 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"5beb1889-5f26-4aba-b1a4-fe9d7481889d\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/.gitignore\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/encodings.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/vcs.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/hrsys_ssm/.gitignore\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/hrsys_ssm/.mvn/wrapper/maven-wrapper.jar\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/hrsys_ssm/.mvn/wrapper/maven-wrapper.properties\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/hrsys_ssm/mvnw\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/hrsys_ssm/mvnw.cmd\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/hrsys_ssm/pom.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/hrsys_ssm/src/main/java/com/example/hrsys_ssm/HrsysSsmApplication.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/hrsys_ssm/src/main/resources/application.properties\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/hrsys_ssm/src/test/java/com/example/hrsys_ssm/HrsysSsmApplicationTests.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/pom.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/webapp/index.jsp\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2A4YKQHmhzpcMXaeHtsg1YdQyMP\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"ASKED_ADD_EXTERNAL_FILES\": \"true\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"jdk.selected.JAVA_MODULE\": \"18\",\r\n    \"settings.editor.selected.configurable\": \"preferences.pluginManager\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"HrsysSsmApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\">\r\n      <module name=\"hrsys_ssm\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.example.hrsys_ssm.HrsysSsmApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"SvnConfiguration\">\r\n    <configuration>C:\\Users\\USER\\AppData\\Roaming\\Subversion</configuration>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"5beb1889-5f26-4aba-b1a4-fe9d7481889d\" name=\"Changes\" comment=\"\" />\r\n      <created>1654270263452</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1654270263452</updated>\r\n      <workItem from=\"1654270265221\" duration=\"463000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -5,32 +5,57 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="5beb1889-5f26-4aba-b1a4-fe9d7481889d" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/hrsys_ssm/.gitignore" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/hrsys_ssm/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/hrsys_ssm/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/hrsys_ssm/mvnw" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/hrsys_ssm/mvnw.cmd" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/hrsys_ssm/pom.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/hrsys_ssm/src/main/java/com/example/hrsys_ssm/HrsysSsmApplication.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/hrsys_ssm/src/main/resources/application.properties" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/hrsys_ssm/src/test/java/com/example/hrsys_ssm/HrsysSsmApplicationTests.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/hrsys_ssm/src/main/java/com/example/hrsys_ssm/controller/DepartmentController.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/hrsys_ssm/src/main/java/com/example/hrsys_ssm/controller/EmployeeController.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/hrsys_ssm/src/main/java/com/example/hrsys_ssm/dao/DepartmentDao.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/hrsys_ssm/src/main/java/com/example/hrsys_ssm/dao/EmployeeDao.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/hrsys_ssm/src/main/java/com/example/hrsys_ssm/entity/Department.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/hrsys_ssm/src/main/java/com/example/hrsys_ssm/entity/Employee.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/hrsys_ssm/src/main/java/com/example/hrsys_ssm/service/impl/DepartmentService.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/hrsys_ssm/src/main/java/com/example/hrsys_ssm/service/impl/EmployeeService.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/hrsys_ssm/src/main/java/com/example/hrsys_ssm/util/LogOut.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/hrsys_ssm/src/main/resources/applicationContext.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/hrsys_ssm/src/main/resources/db.properties" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/hrsys_ssm/src/main/resources/springmvc.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/hrsys_ssm/src/main/webapp/WEB-INF/dep/add.jsp" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/hrsys_ssm/src/main/webapp/WEB-INF/dep/show.jsp" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/hrsys_ssm/src/main/webapp/WEB-INF/dep/update.jsp" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/hrsys_ssm/src/main/webapp/WEB-INF/emp/add.jsp" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/hrsys_ssm/src/main/webapp/WEB-INF/emp/show.jsp" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/hrsys_ssm/src/main/webapp/WEB-INF/emp/update.jsp" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/hrsys_ssm/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/hrsys_ssm/src/main/webapp/index.jsp" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/hrsys_ssm/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hrsys_ssm/pom.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="FileTemplateManagerImpl">
++    <option name="RECENT_TEMPLATES">
++      <list>
++        <option value="Class" />
++        <option value="Interface" />
++      </list>
++    </option>
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
++  <component name="HighlightingSettingsPerFile">
++    <setting file="file://$PROJECT_DIR$/hrsys_ssm/src/main/resources/applicationContext.xml" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/hrsys_ssm/src/main/resources/springmvc.xml" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/hrsys_ssm/src/main/webapp/WEB-INF/dep/add.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/hrsys_ssm/src/main/webapp/WEB-INF/dep/update.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/hrsys_ssm/src/main/webapp/WEB-INF/dep/show.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/hrsys_ssm/src/main/webapp/WEB-INF/emp/show.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/hrsys_ssm/src/main/webapp/WEB-INF/emp/add.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/hrsys_ssm/src/main/webapp/WEB-INF/web.xml" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/hrsys_ssm/src/main/webapp/WEB-INF/emp/update.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/hrsys_ssm/src/main/webapp/index.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
++  </component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+   </component>
+@@ -42,17 +67,18 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "ASKED_ADD_EXTERNAL_FILES": "true",
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "WebServerToolWindowFactoryState": "false",
+-    "jdk.selected.JAVA_MODULE": "18",
+-    "settings.editor.selected.configurable": "preferences.pluginManager"
+-  }
+-}]]></component>
++  <component name="PropertiesComponent">
++    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
++    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
++    <property name="WebServerToolWindowFactoryState" value="false" />
++    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
++    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
++  </component>
++  <component name="RecentsManager">
++    <key name="MoveFile.RECENT_KEYS">
++      <recent name="E:\github_file\hrproject\hrsys_ssm\src\main\webapp\WEB-INF" />
++    </key>
++  </component>
+   <component name="RunManager">
+     <configuration name="HrsysSsmApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+       <module name="hrsys_ssm" />
+@@ -74,6 +100,8 @@
+       <option name="presentableId" value="Default" />
+       <updated>1654270263452</updated>
+       <workItem from="1654270265221" duration="463000" />
++      <workItem from="1654302325838" duration="4683000" />
++      <workItem from="1654307324602" duration="567000" />
+     </task>
+     <servers />
+   </component>
